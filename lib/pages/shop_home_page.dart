@@ -13,19 +13,18 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage> {
+  TextEditingController controller = TextEditingController();
 
-
-  
   addShoeToCart(Shoe shoe) {
     Provider.of<Cart>(context, listen: false).addToCart(shoe);
     const snackBar = SnackBar(
-        content: Text(
-      "One Item is added to cart",
-      style: TextStyle(color: Colors.black),
-    ),
-    backgroundColor: Colors.white,
-    behavior: SnackBarBehavior.floating,
-    duration: Duration(milliseconds: 2000),
+      content: Text(
+        "One Item is added to cart",
+        style: TextStyle(color: Colors.black),
+      ),
+      backgroundColor: Colors.white,
+      behavior: SnackBarBehavior.floating,
+      duration: Duration(milliseconds: 2000),
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
@@ -36,21 +35,20 @@ class _ShopPageState extends State<ShopPage> {
       builder: (context, value, child) => Column(
         children: [
           Container(
-            padding: const EdgeInsets.all(12),
-            margin: const EdgeInsets.symmetric(horizontal: 25),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10), color: Colors.white),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text(
-                  "Search",
-                  style: TextStyle(color: Colors.grey),
-                ),
-                Icon(Icons.search_rounded)
-              ],
-            ),
-          ),
+              padding: const EdgeInsets.only(left: 12),
+              margin: const EdgeInsets.symmetric(horizontal: 25),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10), color: Colors.white),
+              child: TextField(
+                controller: controller,
+                decoration: const InputDecoration(
+                    hintText: "Search",
+                    border: InputBorder.none,
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.grey,
+                    )),
+              )),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 25),
             child: Text(
