@@ -1,6 +1,5 @@
 # nike_app
-![Untitled](https://user-images.githubusercontent.com/86877145/230555297-4b9ec7cc-f134-4a35-b342-dadd7bbc5c6a.png)
-
+![nike app mockups](https://user-images.githubusercontent.com/86877145/230555550-aea69dc1-8603-4c3c-b618-d8c3d83f1620.png)
 
 A new Flutter project.
 
