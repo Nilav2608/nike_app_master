@@ -1,5 +1,5 @@
 # nike_app
-This app is bulided with <h2>flutter provider  state management</h2> this project is good for the beginers who can use this project to learn provider state management!
+This app is bulid by using <h2>flutter provider  state management</h2> this project is good for the beginers who can use this project to learn provider state management!
 
 ![nike app mockups](https://user-images.githubusercontent.com/86877145/230555550-aea69dc1-8603-4c3c-b618-d8c3d83f1620.png)
 
